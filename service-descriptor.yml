@@ -1,0 +1,21 @@
+
+name: micros reactjs java
+description: micros-reactjs-java
+organization: "Cloud Platform Engineering"
+
+notifications:
+  email: micros@atlassian.com
+
+links:
+  binary:
+    name: "${DOCKER_IMAGE}"
+    type: docker
+    tag: "${DOCKER_TAG}"
+  healthcheck:
+    uri: /healthcheck
+  source:
+    url: ssh://git@stash.atlassian.com:7997/mc/micros-quickstart-java.git
+
+scaling:
+  min: 1
+  instance: t2.small
