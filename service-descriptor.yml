@@ -14,7 +14,7 @@ links:
   healthcheck:
     uri: /healthcheck
   source:
-    url: ssh://git@stash.atlassian.com:7997/mc/micros-quickstart-java.git
+    url: ssh://git@bitbucket.org:asirobaba/atlasmicros.git
 
 scaling:
   min: 1
